@@ -7,17 +7,20 @@
     <authors>AlbanianXrm</authors>
     <owners>AlbanianXrm</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Greeter Shared Sources Project</description>    
-    <copyright>AlbanianXrm (c) 2021</copyright>   
+    <description>Greeter Shared Sources Project</description>
+    <copyright>AlbanianXrm (c) 2021</copyright>
     <releaseNotes>
-    Proof of concept package for Grpc using Shared Sources
+      Proof of concept package for Grpc using Shared Sources
     </releaseNotes>
-    <license type="expression">Apache-2.0</license>	
+    <license type="expression">Apache-2.0</license>
     <tags>Grpc AlbanianXrm</tags>
-	<dependencies>
+    <projectUrl>https://github.com/albanian-xrm/Greeter.Shared</projectUrl>
+    <repository type="git" url="https://github.com/albanian-xrm/Greeter.Shared.git" />
+    <iconUrl>https://raw.githubusercontent.com/albanian-xrm/Greeter.Shared/master/Logo_80x80.png</iconUrl>
+    <dependencies>
       <dependency id="Google.Protobuf" version="3.8.0" />
-	  <dependency id="Grpc" version="2.23.0" />
-	  <dependency id="Grpc.Tools" version="2.23.0" />
+      <dependency id="Grpc" version="2.23.0" />
+      <dependency id="Grpc.Tools" version="2.23.0" />
     </dependencies>
   </metadata>
   <files>
