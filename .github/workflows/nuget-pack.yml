@@ -1,0 +1,20 @@
+name: Create Nuget package
+
+on: [push]
+
+jobs:
+  pack:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Generate Nuget package
+        working-directory: ${{env.GITHUB_WORKSPACE}}
+        run: nuget pack Greeter.Shared\Greeter.Shared.Sources.nuspec
+
+      - name: Publish Greeter.Shared.Sources
+        uses: actions/upload-artifact@v2
+        with:
+          name: Nuget Package
+          path: 'Greeter.Shared.Sources*.nupkg'
